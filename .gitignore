@@ -1,0 +1,60 @@
+# Credentials - never commit
+.env
+
+# Debug output
+my_courses_debug.html
+moodle_courses_debug.log
+course_view_debug.html
+grader_page_debug.html
+playwright_debug.html
+grade_page_*.html
+grade_submit_debug_*.html
+
+# Downloaded submission files and grading output
+submissions/
+grades/
+Users.md
+grade_*.txt
+grading_summary.csv
+grading_resumen_global.md
+
+# Moodle log files (contain student data)
+logs*.csv
+Logs*.csv
+*logs*.csv
+*Logs*.csv
+
+# Grade exports and upload plans (contain student data)
+*.xlsx
+notas_plan.csv
+notas_plan_resultados.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env.local
+.pytest_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+dist/
+build/
+*.spec
+*.egg-info/
+
+# HAR / browser traces — contain session cookies and possibly passwords. Never commit.
+*.har
+# Saved HTML page snapshots used for offline analysis
+*Archive*.htm
+*Archive*.html
+https___*.htm
+https___*.html
+# Internal analysis scratch dir
+_analysis/
+
+# Claude Code local overrides
+.claude/settings.local.json
+CLAUDE.local.md
